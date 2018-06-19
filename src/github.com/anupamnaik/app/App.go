@@ -11,11 +11,18 @@ func swap(x, y int) (int, int) {
 }
 
 func main() {
-	fmt.Println("Strating application...")
+	fmt.Println("Starting application...")
 	fmt.Println(functions.RandomNumberInt(100))
 
 	a, b := functions.SwapInt(12, 34)
 	fmt.Println(a, b)
+
+	s1, s2 := functions.SwapString("two", "strings")
+	fmt.Println(s1, s2)
+
+	functions.Repeat(10000, func(i int) {
+		fmt.Println("Counter ", i)
+	})
 
 	fmt.Println("End here.")
 }
