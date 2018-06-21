@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/anupamnaik/app/functions"
 )
 
+// main the main stand-alone app
 func main() {
 	fmt.Println("Starting application...")
-	fmt.Println(functions.RandInt(100))
-	functions.Sqrt(25)
+	//fmt.Printf("%d \n", functions.RandInt(100))
 
-	fmt.Println("End here.")
+	WebApp()
+
+	fmt.Println("Stop.")
 }
