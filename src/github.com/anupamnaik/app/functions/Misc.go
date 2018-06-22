@@ -32,3 +32,12 @@ func Pointer() {
 	fmt.Println(*p)
 	fmt.Println(i)
 }
+
+// Person a person
+type Person struct {
+	FirstName, LastName string
+}
+
+func (p *Person) String() string {
+	return fmt.Sprintf("<%[2]s, %[1]s>", p.FirstName, p.LastName)
+}
