@@ -11,7 +11,8 @@ func main() {
 	fmt.Println("Starting application...")
 
 	//WebApp()
-	sampler()
+	//sampler()
+	functions.Parse()
 
 	fmt.Println("Stop.")
 }
